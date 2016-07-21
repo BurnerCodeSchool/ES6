@@ -43,3 +43,20 @@ function balancedParens(string) {
 balancedParens('()()');
 balancedParens('((asdwdsa()))');
 balancedParens(')(');
+
+
+var numbers = [1,1,2,2,3,4,4,4];
+
+function unique(array) {
+  return array.reduce(function(out, elem){
+    var exists = out.some(function(e){
+    	return e === elem;
+    }); 
+    if (!exists) {
+      out.push(elem);
+    }
+    return out;
+  }, []);
+}
+
+unique(numbers);
