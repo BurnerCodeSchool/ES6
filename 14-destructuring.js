@@ -53,3 +53,17 @@ const [name, name2, ...rest] = companies;
 name; // Google
 name2; // Facebook
 rest; // ['Uber']
+
+
+
+
+// mixing array and object destructuring
+const comapnies = [
+  { name: 'Google', location: 'Mountain View' },
+  { name: 'Facebook', location: 'Menlo Park' },
+  { name: 'User', location: 'San Francisco' },
+];
+
+const [{ location }] = companies;
+
+location; // Mountain View
