@@ -37,4 +37,25 @@ for( let color of colors()) {
 myColors; // ["red","blue","green"]
 
 
+//------------------
+// using a generator to iterate specific fields of an object
+const engineeringTeam = {
+  size: 3,
+  department: 'Engineering',
+  lead: 'Jill',
+  manager: ' Alex',
+  engineering: 'Dave',
+}
+
+function * TeamIterator(team) {
+  yield team.lead;
+  yield team.manager;
+  yield team.engineer
+}
+
+const names = [];
+for( let name of TeamIterator(engineeringTeam)) {
+  names.push(name);
+}
+names; // ['Jill','Alex','Dave']
 
