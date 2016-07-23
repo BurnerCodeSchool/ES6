@@ -44,7 +44,7 @@ const engineeringTeam = {
   department: 'Engineering',
   lead: 'Jill',
   manager: ' Alex',
-  engineering: 'Dave',
+  engineer: 'Dave',
 }
 
 function * TeamIterator(team) {
