@@ -3,9 +3,9 @@
 // a generator returns an object which consists of a value 
 // and a flag to indicate if the function has finished
 function * genfunction() {
-	// things to do before yielding a value
-	const upstreamValue = yield 'someValue';
-	// things to do before being finished
+  // things to do before yielding a value
+  const upstreamValue = yield 'someValue';
+  // things to do before being finished
   return upstreamValue;
 }
 
