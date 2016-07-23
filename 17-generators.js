@@ -69,7 +69,7 @@ const testingTeam = {
 }
 const engineeringTeam = {
   testingTeam,
-	size: 3,
+  size: 3,
   department: 'Engineering',
   lead: 'Jill',
   manager: ' Alex',
